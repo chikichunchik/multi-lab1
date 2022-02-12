@@ -124,7 +124,7 @@ def print_result(words_count, words, size, rows_count):
     label.printloop
     if pointer == size or words_count[pointer] == 0:
         return
-    if words_count[pointer][0] < 100 and words_count[pointer][0] != 0:
+    if words_count[pointer][0] <= 100 and words_count[pointer][0] != 0:
         print(words[pointer] + ' - ', end='')
         pointer2 = 1
         label.printloop1
